@@ -4,6 +4,7 @@ Project Requirement Specification(PRD)
 Goal: Design a service which will poll stock market and generate alert after a condition is satisfied
 
 Steps:
+
 1. Create a python script to send email
 
 2. Create a python script to get quote of ticker
@@ -26,9 +27,11 @@ Steps:
 
 11. Make rules pluggable and define rules list
 
+
 Tech Stack to use: Python, SMTP lib, AWS, Docker, Kubernetes, Redis, financemodellingprep, REST API
 
 Advance techniques:
+
 1. Configurable rules
 
 2. Only companies with market capitalization > 1 Billion, and quaterly revenue > 50 Million and Analyst rating = Buy, if stock dips by 5% send alert as message
@@ -36,3 +39,4 @@ Advance techniques:
 3. Send email as well text message
 
 4.If reply email is "buy" with quantity. Buy the stock by integrating with investment platform
+
