@@ -40,3 +40,7 @@ Advance techniques:
 
 4.If reply email is "buy" with quantity. Buy the stock by integrating with investment platform
 
+5.Run a python server: Expose two REST API: GET /recommendation : return stocks which are buy as per rules
+                                            POST /subscribe {email_address} : add email to list of email address
+                                            POST /addStock {Ticker Symbol}: add stock for rules
+
