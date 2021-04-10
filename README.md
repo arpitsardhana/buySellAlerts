@@ -43,4 +43,22 @@ Advance techniques:
 5.Run a python server: Expose two REST API: GET /recommendation : return stocks which are buy as per rules
                                             POST /subscribe {email_address} : add email to list of email address
                                             POST /addStock {Ticker Symbol}: add stock for rules
+                                            
+6. Modernaize infrastructure:           
 
+          Load Balancer: Envoy
+          API ingress: Trafik
+          DNS: check if we can use route53 or get domain name and map it our load balancer IP
+          Logging: Elastic search, kibana, Fluend
+          Monitoring: Prometheus, Alert manager with alert going to email or phone
+          Security:   
+               Network security/policies : Use Istio
+               App security/Image scanning: Figure out cloud native tools
+          Documentation tools:
+          Ensure APIs are versioned
+          Databases: PostGres for SQL, Etcd for key-Value
+          Caching: Use Redis for caching of data and faster api response
+          
+ 7. Write an operator for your app: 
+          Operator will deploy app, databases, logging, monitoring infrastructure, if possible deploy load balancer
+          
