@@ -62,3 +62,6 @@ Advance techniques:
  7. Write an operator for your app: 
           Operator will deploy app, databases, logging, monitoring infrastructure, if possible deploy load balancer
           
+ 8. Integrate a UI: such that charts, stock, subscripton can be done via UI
+ 9. Enhance charts:1) Get sentimental analysis of stock: 1) sentiment on reddit 2) sentiment on news 3) sentiment on twitter
+ 10. Co-relate sentiment to stock rise/fall and check if there is buy/sell signal
