@@ -1,0 +1,31 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: buysellalert-deployment
+spec:
+  selector:
+    matchLabels:
+      app: buysell
+  replicas: 2 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: buysell
+    spec:
+      containers:
+      - name: buysell
+        image: nehasingh1501/buysell_alerts_1
+        ports:
+        -  containerPort: 5000
+        env:
+        - name: apikey
+          valueFrom:
+           secretKeyRef:
+            name: flaskapi-secrets
+            key: apikey
+        - name: password
+          valueFrom:
+           secretKeyRef:
+            name: flaskapi-secrets
+            key: password            
