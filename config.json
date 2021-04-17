@@ -1,0 +1,9 @@
+{
+"stockmarketopen":"06:30:00",
+"stockmarketclose":"18:30:00",
+"recipient_address":["nehassingh1501@gmail.com","arpitsardhana2008@gmail.com"],
+"base_url":"https://financialmodelingprep.com/api/v3/quote/",
+"all_tickr_URL":"https://financialmodelingprep.com/api/v3/stock/list",
+"sender_address": "buysellpython@gmail.com",
+"SMTP port" :"465"
+}
